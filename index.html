@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Chatchanan Panyaprasirtkit</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #2980b9;
+            --text-color: #333;
+            --bg-color: #fff;
+            --section-gap: 10px; /* Reduced from 15px */
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f2f5;
+            color: var(--text-color);
+            line-height: 1.3; /* Reduced from 1.4 */
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .resume-container {
+            background-color: var(--bg-color);
+            width: 210mm;
+            min-height: 297mm;
+            padding: 25px; /* Reduced from 30px */
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            box-sizing: border-box;
+        }
+
+        /* Header */
+        header {
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 5px; /* Reduced from 10px */
+            margin-bottom: 10px; /* Reduced from 15px */
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .profile-photo {
+            width: 90px; /* Reduced from 100px */
+            height: 112px; /* Reduced from 125px */
+            /* object-fit: cover;
+            border-radius: 4px;
+            margin-left: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); */
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 22px; /* Reduced from 24px */
+            color: var(--primary-color);
+            text-transform: uppercase;
+        }
+
+        .personal-details {
+            font-size: 11px; /* Reduced from 12px */
+            color: #555;
+            margin-top: 3px; /* Reduced from 5px */
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2px;
+        }
+
+        /* Sections */
+        h2 {
+            font-size: 14px; /* Reduced from 15px */
+            color: var(--primary-color);
+            text-transform: uppercase;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 2px; /* Reduced from 3px */
+            margin-top: 0;
+            margin-bottom: 8px; /* Reduced from 10px */
+        }
+
+        section {
+            margin-bottom: var(--section-gap);
+        }
+
+        p {
+            margin: 0 0 5px 0;
+            font-size: 12px; /* Reduced from 13px */
+            text-align: justify;
+        }
+
+        /* Experience */
+        .job-item {
+            margin-bottom: 8px; /* Reduced from 10px */
+            page-break-inside: avoid;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1px; /* Reduced from 2px */
+        }
+
+        .job-title {
+            font-weight: 700;
+            font-size: 13px; /* Reduced from 14px */
+        }
+
+        .company-name {
+            font-style: italic;
+            color: #444;
+        }
+
+        .job-date {
+            font-size: 11px; /* Reduced from 12px */
+            color: #666;
+            text-align: right;
+            min-width: 140px;
+        }
+
+        ul {
+            margin: 1px 0 3px 15px; /* Reduced margins */
+            padding: 0;
+        }
+
+        li {
+            font-size: 12px; /* Reduced from 12.5px */
+            margin-bottom: 1px;
+        }
+
+        /* Skills & Languages */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 110px 1fr; /* Reduced label width */
+            gap: 5px;
+            font-size: 12px; /* Reduced from 13px */
+            margin-bottom: 2px; /* Reduced from 3px */
+        }
+        
+        .skill-label {
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        /* Awards */
+        .award-item {
+            margin-bottom: 6px;
+            font-size: 14px;
+        }
+
+        /* Print */
+        @media print {
+            body { background: none; padding: 0; }
+            .resume-container { box-shadow: none; width: 100%; padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="resume-container">
+        <header>
+            <div class="header-text">
+                <h1>Chatchanan Panyaprasirtkit</h1>
+                <div class="personal-details">
+                    <div class="contact-line">
+                        changnoi2547@gmail.com | 096-227-6090 | Khon Kaen
+                    </div>
+                    <div><strong>Date of Birth:</strong> Feb 16, 2004</div>
+                    <div><strong>Nationality:</strong> Thai</div>
+                    <div style="grid-column: 1 / -1; margin-top: 5px;">
+                        <strong>Address:</strong> 428, Moo 15, Ban Phai Thong, Lhub Subdistrict, Mueang Kalasin District, Kalasin Province
+                    </div>
+                </div>
+            </div>
+            <img src="developer.jpg" alt="Chatchanan Panyaprasirtkit" class="profile-photo">
+        </header>
+
+        <section>
+            <h2>Objective</h2>
+            <p>
+                A highly motivated and detail-oriented Backend Developer with experience in building and optimizing scalable web applications. Seeking a challenging position where I can leverage my skills in API development, database management, and cloud infrastructure to contribute to a dynamic team and deliver robust backend solutions. Eager to apply my expertise in languages like Golang, as well as my experience with services and containerization, to drive innovation and support business growth.
+            </p>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-label">Programming:</div>
+                <div>Go, Python, Java, Dart, Lua, C++, Assembly, HTML/CSS/JS</div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-label">Technologies:</div>
+                <div>Flutter, Svelte, Next.js, Fiber, Gin, Redis, SQL/NoSQL, JSON/JWT, Socket.io, MQTT, gRPC, MinIO, SlipOK, OAuth/LDAP/SSO, Zitadel</div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-label">DevOps & Tools:</div>
+                <div>Docker, Linux, Git, K6, Jenkins, Traefik, Nginx, Vercel, Firebase, Google Cloud Console</div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-label">Productivity:</div>
+                <div>Trello, Lark, Clickup, Discord, Draw.io, Huly, Generative AI</div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-label">IOT:</div>
+                <div>Arduino, Raspberry Pi</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Experience</h2>
+
+            <div class="job-item">
+                <div class="job-header">
+                    <span class="job-title">Backend Developer <span class="company-name">| Zercle Technology Co., Ltd.</span></span>
+                    <span class="job-date">Apr 2024 – Present</span>
+                </div>
+                <ul>
+                    <li>Implemented authentication and authorization using JWT and OAuth.</li>
+                    <li>Built RESTful APIs using Golang and Go-fiber framework.</li>
+                    <li>Designed and optimized database schemas.</li>
+                    <li>Integrated third-party services and APIs to enhance the system functionality.</li>
+                </ul>
+            </div>
+            <div class="job-item">
+                <div class="job-header">
+                    <span class="job-title">Product Support Engineer Trainee <span class="company-name">| Seagate Technology</span></span>
+                    <span class="job-date">Jun 2025 – Oct 2025</span>
+                </div>
+                <ul>
+                    <li>Developed full-stack web applications using Next.js and Svelte for the frontend, delivering intuitive user interfaces.</li>
+                    <li>Built scalable backend services and RESTful APIs using Golang to support product engineering workflows.</li>
+                    <li>Managed deployment pipelines and container orchestration using Rancher, and maintained Windows Server infrastructure.</li>
+                    <li>Contributed to the entire software development lifecycle, from design and implementation to deployment and support.</li>
+                </ul>
+            </div>
+            <div class="job-item">
+                <div class="job-header">
+                    <span class="job-title">Fullstack Developer Trainee <span class="company-name">| ARZIO CO., LTD.</span></span>
+                    <span class="job-date">Apr 2024 – Jun 2024</span>
+                </div>
+                <ul>
+                    <li>Connected to smart contracts using Hardhat for applications on Ethereum.</li>
+                    <li>Developed RESTful APIs using Hono, Golang, and Go-fiber framework.</li>
+                    <li>Built web applications using Svelte and TypeScript.</li>
+                    <li>Performed code reviews and provided feedback to team members for continuous improvement.</li>
+                    <li>Participated in code reviews and collaborated in Agile/Scrum environments, contributing to sprint planning, daily standups, and retrospectives.</li>
+                </ul>
+            </div>
+
+            <!-- <div class="job-item">
+                <div class="job-header">
+                    <span class="job-title">Programming Teacher <span class="company-name">| Casa de Bamboo Montessori School</span></span>
+                    <span class="job-date">Aug 2023 – Aug 2024</span>
+                </div>
+                <ul>
+                    <li>Teaching coding concepts and languages to students of all ages and skill levels.</li>
+                    <li>Developing and implementing engaging lesson plans and coursework.</li>
+                    <li>Providing individualized support and feedback to students to help them succeed.</li>
+                </ul>
+            </div> -->
+
+            <div class="job-item">
+                <div class="job-header">
+                    <span class="job-title">Backend Developer Trainee <span class="company-name">| T.C.C TECHNOLOGY CO., LTD.</span></span>
+                    <span class="job-date">May 2023 – Jun 2023</span>
+                </div>
+                <ul>
+                    <li>Built RESTful APIs using Golang and Go-fiber framework.</li>
+                    <li>Developed and implemented JWT authentication for secure API endpoints.</li>
+                    <li>Applied unit testing and integration testing for backend services, ensuring high code quality and reliability.</li>
+                    <li>Performed code reviews and provided feedback to team members for continuous improvement.</li>
+                    <li>Participated in code reviews and collaborated in Agile/Scrum environments, contributing to sprint planning, daily standups, and retrospectives.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Honors & Awards</h2>
+            <div class="award-item"> <strong>1st Runner-Up, TESA Top Gun 2025 Competition: <br></strong> Top Score in Visualization & AI Drone Base.</div>
+            <div class="award-item"> <strong>Participant, TESA Top Gun 2024 Competition</strong></div>
+            <div class="award-item"> <strong>Participant, Hackathon KKU X Origin Competition</strong></div>
+            <div class="award-item"> <strong>Developer, Healthy Life Season 5 System Development</strong></div>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <div class="job-header">
+                <span class="job-title">Bachelor of Engineering in Computer Engineering</span>
+                <span class="job-date">May 2022 – Present</span>
+            </div>
+            <div class="job-title">Khon Kaen University, Thailand</div>
+            <div style="font-size: 12px; color: #777; margin-top: 2px;">
+                123 Mittraphap Road, Nai Mueang Subdistrict, Mueang Khon Kaen District, Khon Kaen Province, 40002
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>

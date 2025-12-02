@@ -1,0 +1,12 @@
+{
+  "name": "resume-converter",
+  "version": "1.0.0",
+  "description": "Convert resume HTML to PDF and JPG",
+  "main": "convert.js",
+  "scripts": {
+    "convert": "node convert.js"
+  },
+  "dependencies": {
+    "puppeteer": "^23.0.0"
+  }
+}
