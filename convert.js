@@ -1,13 +1,33 @@
 const puppeteer = require("puppeteer");
 const path = require("path");
+const fs = require("fs");
 
 (async () => {
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
 
+  // Load config.json
+  const configPath = path.join(__dirname, "config.json");
+  const configData = JSON.parse(fs.readFileSync(configPath, "utf8"));
+
   // Load the local HTML file
   const filePath = path.join(__dirname, "index.html");
   await page.goto(`file://${filePath}`, { waitUntil: "networkidle0" });
+
+  // Inject config data into page
+  await page.evaluate((data) => {
+    window.configData = data;
+  }, configData);
+
+  // Wait for content to load and trigger loadResume with injected data
+  await page.evaluate(() => {
+    if (typeof loadResumeWithData === 'function') {
+      loadResumeWithData(window.configData);
+    }
+  });
+
+  // Wait a bit for rendering
+  await new Promise(resolve => setTimeout(resolve, 500));
 
   // Set viewport to A4 size at 96 DPI (approximate) for consistent rendering
   // A4 is 210mm x 297mm.

@@ -1,0 +1,115 @@
+{
+  "personal": {
+    "name": "Chatchanan Panyaprasirtkit",
+    "email": "changnoi2547@gmail.com",
+    "phone": "096-227-6090",
+    "location": "Khon Kaen",
+    "dateOfBirth": "Feb 16, 2004",
+    "nationality": "Thai",
+    "address": "428, Moo 15, Ban Phai Thong, Lhub Subdistrict, Mueang Kalasin District, Kalasin Province",
+    "photo": "developer.jpg"
+  },
+  "objective": "A highly motivated and detail-oriented Fullstack Developer and DevOps Engineer with experience in building and optimizing scalable web applications and managing cloud infrastructure. Seeking a challenging position where I can leverage my skills in full-stack development, CI/CD pipelines, containerization, and infrastructure automation to contribute to a dynamic team. Eager to apply my expertise in languages like Golang and various technologies, as well as my experience with DevOps practices, to drive innovation and support business growth.",
+  "skills": {
+    "Programming": "Go, Python, Java, Dart, Lua, C++, Assembly, HTML/CSS/JS",
+    "Technologies": "Flutter, Svelte, Next.js, Fiber, Gin, Redis, SQL/NoSQL, JSON/JWT, Socket.io, MQTT, gRPC, MinIO, SlipOK, Omise, Vdocypher, OAuth/LDAP/SSO, Zitadel, KIE",
+    "DevOps & Tools": "Docker, Linux, Git, K6, Jenkins, Traefik, Nginx, Vercel, Firebase, Microsoft Azure, Digital Ocean",
+    "Productivity": "Trello, Lark, Clickup, Discord, Draw.io, Huly, Microsoft Team, Generative AI, Claude code",
+    "IOT": "Arduino, Raspberry Pi"
+  },
+  "experience": [
+    {
+      "title": "Fullstack Developer + DevOps",
+      "company": "SYSWARE (THAILAND) CO., LTD.",
+      "date": "Jan 2026 – Present",
+      "responsibilities": [
+        "Building enterprise web applications with modern frontend and backend technologies.",
+        "Implementing CI/CD pipelines using Jenkins and Docker for automated deployment workflows.",
+        "Configuring and maintaining server infrastructure with Linux and containerization tools."
+      ]
+    },
+    {
+      "title": "Fullstack Developer + DevOps",
+      "company": "RELU THAI CO., LTD.",
+      "date": "Jan 2026 – Present",
+      "responsibilities": [
+        "Developing scalable APIs and microservices architecture for business solutions.",
+        "Managing cloud infrastructure and deployment processes using containerization.",
+        "Collaborating with cross-functional teams to deliver high-quality software products."
+      ]
+    },
+    {
+      "title": "Backend Developer + DevOps",
+      "company": "ZERCLE TECHNOLOGY CO., LTD.",
+      "date": "Apr 2024 – Feb 2026",
+      "responsibilities": [
+        "Built and maintained RESTful APIs using Golang and Go-fiber framework for enterprise-level applications.",
+        "Implemented authentication and authorization using JWT, OAuth, and SSO integration.",
+        "Designed and optimized database schemas for SQL and NoSQL databases to improve query performance.",
+        "Set up CI/CD pipelines using Jenkins and Docker for automated testing and deployment.",
+        "Configured and managed server infrastructure with Traefik, Nginx, and containerization tools.",
+        "Integrated third-party services and APIs including payment gateways and external platforms.",
+        "Collaborated in Agile/Scrum environments, contributing to sprint planning and code reviews."
+      ]
+    },
+    {
+      "title": "Product Support Engineer Trainee",
+      "company": "SEAGATE TECHNOLOGY",
+      "date": "Jun 2025 – Oct 2025",
+      "responsibilities": [
+        "Developed full-stack web applications using Next.js and Svelte for the frontend, delivering intuitive user interfaces.",
+        "Built scalable backend services and RESTful APIs using Golang to support product engineering workflows.",
+        "Managed deployment pipelines and container orchestration using Rancher, and maintained Windows Server infrastructure.",
+        "Contributed to the entire software development lifecycle, from design and implementation to deployment and support."
+      ]
+    },
+    {
+      "title": "Fullstack Developer Trainee",
+      "company": "ARZIO CO., LTD.",
+      "date": "Apr 2024 – Jun 2024",
+      "responsibilities": [
+        "Connected to smart contracts using Hardhat for applications on Ethereum.",
+        "Developed RESTful APIs using Hono, Golang, and Go-fiber framework.",
+        "Built web applications using Svelte and TypeScript.",
+        "Performed code reviews and provided feedback to team members for continuous improvement.",
+        "Participated in code reviews and collaborated in Agile/Scrum environments, contributing to sprint planning, daily standups, and retrospectives."
+      ]
+    },
+    {
+      "title": "Backend Developer Trainee",
+      "company": "T.C.C TECHNOLOGY CO., LTD.",
+      "date": "May 2023 – Jun 2023",
+      "responsibilities": [
+        "Built RESTful APIs using Golang and Go-fiber framework.",
+        "Developed and implemented JWT authentication for secure API endpoints.",
+        "Applied unit testing and integration testing for backend services, ensuring high code quality and reliability.",
+        "Performed code reviews and provided feedback to team members for continuous improvement.",
+        "Participated in code reviews and collaborated in Agile/Scrum environments, contributing to sprint planning, daily standups, and retrospectives."
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "1st Runner-Up, TESA Top Gun 2025 Competition",
+      "description": "Top Score in Visualization & AI Drone Base."
+    },
+    {
+      "title": "Participant, TESA Top Gun 2024 Competition",
+      "description": null
+    },
+    {
+      "title": "Participant, Hackathon KKU X Origin Competition",
+      "description": null
+    },
+    {
+      "title": "Developer, Healthy Life Season 5 System Development",
+      "description": null
+    }
+  ],
+  "education": {
+    "degree": "Bachelor of Engineering in Computer Engineering",
+    "date": "May 2022 – Present",
+    "institution": "Khon Kaen University, Thailand",
+    "address": "123 Mittraphap Road, Nai Mueang Subdistrict, Mueang Khon Kaen District, Khon Kaen Province, 40002"
+  }
+}
